@@ -70,26 +70,6 @@
         </div>
 
 
-
-        <!-- KONTAK -->
-
-        <div class="kontak-dua" id="kontak">
-
-            <h2>
-                Kontak Kita
-            </h2>
-
-            <p>
-                Email: naisya@gmail.com
-            </p>
-
-            <p>
-                Instagram: @naisya
-            </p>
-
-        </div>
-
-
     </div>
 
 
