@@ -1,11 +1,340 @@
-@import 'tailwindcss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+body {
+    font-family: Arial, sans-serif;
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+
+/* =================================================
+   HALAMAN PERTAMA
+   ================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 75px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(32, 61, 77, 0.95);
+
+    z-index: 1000;
+}
+
+
+/* LOGO HALAMAN PERTAMA */
+
+.logo {
+    color: #fff0cf;
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    font-weight: bold;
+}
+
+
+/* MENU HALAMAN PERTAMA */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-menu a {
+    color: #fff0cf;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #e58b5d;
+}
+
+.nav-menu .active {
+    color: #e58b5d;
+}
+
+
+/* BACKGROUND HALAMAN PERTAMA */
+
+.landing-page {
+    min-height: 100vh;
+
+    width: 100%;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 75px;
+}
+
+
+/* ISI HALAMAN PERTAMA */
+
+.content {
+    margin-left: 8%;
+
+    max-width: 430px;
+
+    color: #b84f32;
+}
+
+.content h1 {
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+
+    color: #7c4935;
+}
+
+
+/* TOMBOL HALAMAN PERTAMA */
+
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #b84f32;
+
+    color: #fff4dc;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #8f3d29;
+
+    transform: translateY(-2px);
+}
+
+
+/* =================================================
+   HALAMAN KEDUA
+   ================================================= */
+
+.halaman-dua-page {
+    min-height: 100vh;
+
+    width: 100%;
+
+    background-color: #203d4d;
+
+    color: #fff0cf;
+
+    padding-top: 75px;
+
+    padding-bottom: 80px;
+
+    position: relative;
+}
+
+
+/* NAVBAR ATAS HALAMAN KEDUA */
+
+.navbar-dua {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 75px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #b84f32;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo-dua {
+    color: #fff0cf;
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    font-weight: bold;
+}
+
+
+/* MENU */
+
+.menu-dua {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+.menu-dua a {
+    color: #fff0cf;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu-dua a:hover {
+    color: #203d4d;
+}
+
+.menu-dua .aktif {
+    color: #203d4d;
+}
+
+
+/* ISI TENGAH HALAMAN KEDUA */
+
+.isi-tengah-dua {
+    width: 600px;
+
+    max-width: 80%;
+
+    position: absolute;
+
+    top: 45%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.isi-tengah-dua h1 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: #fff0cf;
+}
+
+.isi-tengah-dua p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #d9cdb5;
+}
+
+
+/* KONTAK */
+
+.kontak-dua {
+    position: absolute;
+
+    bottom: 95px;
+
+    left: 7%;
+}
+
+.kontak-dua h2 {
+    font-family: Georgia, serif;
+
+    margin-bottom: 10px;
+
+    color: #e58b5d;
+}
+
+.kontak-dua p {
+    margin: 5px 0;
+
+    font-size: 14px;
+
+    color: #d9cdb5;
+}
+
+
+/* NAVBAR BAWAH */
+
+.navbar-bawah-dua {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 65px;
+
+    background-color: #b84f32;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.navbar-bawah-dua a {
+    display: none;
 }
