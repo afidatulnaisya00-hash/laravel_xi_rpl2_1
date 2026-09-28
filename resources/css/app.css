@@ -4,192 +4,329 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
 }
 
 
-/* =================================================
-   HALAMAN PERTAMA
-   ================================================= */
+/* =================================
+   NAVBAR HALAMAN UTAMA
+   ================================= */
 
-.navbar {
+.navbar-utama {
+
     position: fixed;
+
     top: 0;
     left: 0;
 
     width: 100%;
-    height: 75px;
+    height: 70px;
 
-    padding: 0 7%;
+    padding: 0 8%;
 
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
 
-    background-color: rgba(32, 61, 77, 0.95);
+    align-items: center;
+
+    background-color: #4C3D19;
 
     z-index: 1000;
 }
 
 
-/* LOGO HALAMAN PERTAMA */
+/* NAVBAR HALAMAN DUA */
+
+.navbar-dua {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #354024;
+
+    z-index: 1000;
+}
+
+
+/* =================================
+   LOGO
+   ================================= */
 
 .logo {
-    color: #fff0cf;
 
     font-family: Georgia, serif;
 
-    font-size: 27px;
+    font-size: 24px;
 
     font-weight: bold;
+
+    color: #E5D7C4;
+
+    letter-spacing: 2px;
 }
 
 
-/* MENU HALAMAN PERTAMA */
+/* =================================
+   MENU
+   ================================= */
 
-.nav-menu {
+.menu {
+
     display: flex;
-    align-items: center;
-    gap: 35px;
+
+    gap: 30px;
 }
 
-.nav-menu a {
-    color: #fff0cf;
+
+.menu a {
+
+    color: #E5D7C4;
 
     text-decoration: none;
 
-    font-size: 15px;
+    font-size: 14px;
 
     font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.nav-menu a:hover {
-    color: #e58b5d;
-}
-
-.nav-menu .active {
-    color: #e58b5d;
 }
 
 
-/* BACKGROUND HALAMAN PERTAMA */
+.menu a:hover {
 
-.landing-page {
+    color: #CFB899;
+}
+
+
+.menu .aktif {
+
+    color: #CFB899;
+}
+
+
+/* =================================
+   LANDING PAGE
+   ================================= */
+
+.hero {
+
     min-height: 100vh;
 
-    width: 100%;
+    padding: 70px 10% 40px;
 
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
+    background-color: #E5D7C4;
 
     display: flex;
 
     align-items: center;
 
-    padding-top: 75px;
+    justify-content: space-between;
+
+    position: relative;
+
+    overflow: hidden;
 }
 
 
-/* ISI HALAMAN PERTAMA */
+/* =================================
+   HERO TEXT
+   ================================= */
 
-.content {
-    margin-left: 8%;
+.hero-content {
 
-    max-width: 430px;
+    max-width: 560px;
 
-    color: #b84f32;
+    z-index: 2;
 }
 
-.content h1 {
-    font-size: 55px;
 
-    line-height: 1.1;
+.subtitle {
 
-    margin-bottom: 20px;
+    color: #899063;
+
+    font-size: 12px;
 
     font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
 }
 
-.content p {
-    font-size: 18px;
 
-    line-height: 1.6;
+.hero h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    color: #4C3D19;
+
+    margin-bottom: 25px;
+}
+
+
+.deskripsi {
+
+    max-width: 470px;
+
+    color: #354024;
+
+    font-size: 16px;
+
+    line-height: 1.7;
 
     margin-bottom: 30px;
-
-    color: #7c4935;
 }
 
 
-/* TOMBOL HALAMAN PERTAMA */
+/* =================================
+   TOMBOL
+   ================================= */
 
-.button {
+.tombol {
+
     display: inline-block;
 
     padding: 13px 25px;
 
-    background-color: #b84f32;
+    background-color: #4C3D19;
 
-    color: #fff4dc;
+    color: #E5D7C4;
 
     text-decoration: none;
 
-    border-radius: 6px;
-
-    font-size: 15px;
+    font-size: 14px;
 
     font-weight: bold;
 
-    transition: 0.3s;
-}
-
-.button:hover {
-    background-color: #8f3d29;
-
-    transform: translateY(-2px);
+    border-radius: 3px;
 }
 
 
-/* =================================================
-   HALAMAN KEDUA
-   ================================================= */
+.tombol:hover {
 
-.halaman-dua-page {
+    background-color: #354024;
+}
+
+
+/* =================================
+   DEKORASI
+   ================================= */
+
+.dekorasi {
+
+    width: 330px;
+
+    margin-right: 5%;
+
+    transform: rotate(-4deg);
+}
+
+
+.warna {
+
+    height: 95px;
+
+    margin-bottom: 14px;
+
+    border-radius: 2px;
+}
+
+
+.warna-satu {
+
+    background-color: #4C3D19;
+
+    width: 100%;
+}
+
+
+.warna-dua {
+
+    background-color: #354024;
+
+    width: 85%;
+
+    margin-left: 15%;
+}
+
+
+.warna-tiga {
+
+    background-color: #899063;
+
+    width: 70%;
+
+    margin-left: 30%;
+}
+
+
+/* =================================
+   INTRO
+   ================================= */
+
+.intro {
+
+    padding: 90px 10%;
+
+    text-align: center;
+
+    background-color: #CFB899;
+}
+
+
+.intro h2 {
+
+    font-family: Georgia, serif;
+
+    color: #4C3D19;
+
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+
+.intro > p:last-child {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #354024;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   HALAMAN DUA
+   ================================= */
+
+.about {
+
     min-height: 100vh;
 
-    width: 100%;
+    padding: 120px 10% 70px;
 
-    background-color: #203d4d;
-
-    color: #fff0cf;
-
-    padding-top: 75px;
-
-    padding-bottom: 80px;
-
-    position: relative;
-}
-
-
-/* NAVBAR ATAS HALAMAN KEDUA */
-
-.navbar-dua {
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-
-    height: 75px;
-
-    padding: 0 7%;
+    background-color: #899063;
 
     display: flex;
 
@@ -197,144 +334,139 @@ body {
 
     justify-content: space-between;
 
-    background-color: #b84f32;
-
-    z-index: 1000;
+    gap: 70px;
 }
 
 
-/* LOGO */
+.about-content {
 
-.logo-dua {
-    color: #fff0cf;
+    max-width: 550px;
+}
+
+
+.about h1 {
 
     font-family: Georgia, serif;
 
-    font-size: 27px;
+    color: #354024;
 
-    font-weight: bold;
+    font-size: 60px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
 }
 
 
-/* MENU */
+.about-content > p:not(.subtitle) {
 
-.menu-dua {
-    display: flex;
+    color: #354024;
 
-    align-items: center;
+    line-height: 1.7;
 
-    gap: 35px;
-}
+    font-size: 16px;
 
-.menu-dua a {
-    color: #fff0cf;
-
-    text-decoration: none;
-
-    font-size: 15px;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.menu-dua a:hover {
-    color: #203d4d;
-}
-
-.menu-dua .aktif {
-    color: #203d4d;
+    margin-bottom: 30px;
 }
 
 
-/* ISI TENGAH HALAMAN KEDUA */
+/* =================================
+   KOTAK HALAMAN DUA
+   ================================= */
 
-.isi-tengah-dua {
-    width: 600px;
+.about-box {
 
-    max-width: 80%;
-
-    position: absolute;
-
-    top: 45%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    text-align: center;
+    width: 330px;
 }
 
-.isi-tengah-dua h1 {
+
+.box {
+
+    padding: 30px;
+
+    margin-bottom: 15px;
+
+    background-color: #E5D7C4;
+
+    color: #4C3D19;
+}
+
+
+.box:nth-child(2) {
+
+    background-color: #4C3D19;
+
+    color: #E5D7C4;
+}
+
+
+.box h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.box p {
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =================================
+   CONTACT
+   ================================= */
+
+.contact {
+
+    padding: 80px 10%;
+
+    background-color: #CFB899;
+}
+
+
+.contact h2 {
+
     font-family: Georgia, serif;
 
     font-size: 42px;
 
-    line-height: 1.2;
+    color: #4C3D19;
 
-    margin-bottom: 25px;
-
-    color: #fff0cf;
-}
-
-.isi-tengah-dua p {
-    font-size: 17px;
-
-    line-height: 1.7;
-
-    color: #d9cdb5;
+    margin-bottom: 20px;
 }
 
 
-/* KONTAK */
+.contact p {
 
-.kontak-dua {
-    position: absolute;
+    color: #354024;
 
-    bottom: 95px;
-
-    left: 7%;
-}
-
-.kontak-dua h2 {
-    font-family: Georgia, serif;
-
-    margin-bottom: 10px;
-
-    color: #e58b5d;
-}
-
-.kontak-dua p {
-    margin: 5px 0;
-
-    font-size: 14px;
-
-    color: #d9cdb5;
+    margin-bottom: 8px;
 }
 
 
-/* NAVBAR BAWAH */
+/* =================================
+   FOOTER
+   ================================= */
 
-.navbar-bawah-dua {
-    position: fixed;
-
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
+footer {
 
     height: 65px;
 
-    background-color: #b84f32;
+    background-color: #4C3D19;
 
     display: flex;
 
-    justify-content: center;
-
     align-items: center;
 
-    z-index: 1000;
-}
+    justify-content: center;
 
-.navbar-bawah-dua a {
-    display: none;
+    color: #E5D7C4;
+
+    font-size: 13px;
 }

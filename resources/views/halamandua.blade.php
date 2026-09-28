@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Halaman Kedua</title>
+    <title>About</title>
 
     @vite('resources/css/app.css')
 
@@ -16,24 +16,23 @@
 
 <body>
 
-
-    <!-- NAVBAR ATAS -->
+    <!-- NAVBAR -->
 
     <nav class="navbar-dua">
 
-        <div class="logo-dua">
-            Naisya
+        <div class="logo">
+            EXPLORE
         </div>
 
 
-        <div class="menu-dua">
+        <div class="menu">
 
             <a href="/">
                 Home
             </a>
 
             <a href="/halamandua" class="aktif">
-                Halaman Kedua
+                About
             </a>
 
             <a href="#kontak">
@@ -46,39 +45,108 @@
 
 
 
-    <!-- HALAMAN KEDUA -->
+    <!-- ABOUT -->
 
-    <div class="halaman-dua-page">
+    <section class="about">
 
+        <div class="about-content">
 
-        <!-- TULISAN TENGAH -->
+            <p class="subtitle">
+                ABOUT THIS JOURNEY
+            </p>
 
-        <div class="isi-tengah-dua">
 
             <h1>
-                Temukan Keindahan<br>
-                Dalam Setiap Perjalanan
+                Every Place<br>
+                Has A Story
             </h1>
 
 
             <p>
-                Setiap tempat memiliki cerita dan setiap perjalanan
-                memberikan pengalaman baru. Nikmati perjalananmu
-                dan temukan sesuatu yang indah di setiap langkah.
+
+                Perjalanan bukan hanya tentang tujuan,
+                tetapi juga tentang pengalaman yang
+                kita temukan di sepanjang jalan.
+
             </p>
+
+
+            <a href="/" class="tombol">
+                Back To Home
+            </a>
 
         </div>
 
 
-    </div>
+        <div class="about-box">
+
+            <div class="box">
+
+                <h3>
+                    Nature
+                </h3>
+
+                <p>
+                    Menikmati keindahan alam.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <h3>
+                    Journey
+                </h3>
+
+                <p>
+                    Mengumpulkan pengalaman baru.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
 
-    <!-- NAVBAR BAWAH -->
+    <!-- CONTACT -->
 
-    <nav class="navbar-bawah-dua">
+    <section class="contact" id="kontak">
 
-    </nav>
+        <p class="subtitle">
+            GET IN TOUCH
+        </p>
+
+
+        <h2>
+            Contact Us
+        </h2>
+
+
+        <p>
+            Email: naisya@gmail.com
+        </p>
+
+
+        <p>
+            Instagram: @naisya
+        </p>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 naisya
+        </p>
+
+    </footer>
 
 
 </body>
